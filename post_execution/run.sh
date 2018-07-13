@@ -1,8 +1,9 @@
 #!/bin/bash
 dir=$(pwd)
-if [ -d "$dir"+"/data"] 
+if [ -d "${dir}/data" ] 
 then
-	sudo sh "$dir"+"/AutomaticCLaaTServing/run.sh" "$dir"+"/data/test-data.csv"
+	echo "Running sh ${dir}/AutomaticCLaaTServing/run.sh ${dir}/data/test-data.csv"
+	sudo sh "${dir}/AutomaticCLaaTServing/run.sh" "${dir}/data/test-data.csv"
 else
 	echo "data directory does not exist"
 fi

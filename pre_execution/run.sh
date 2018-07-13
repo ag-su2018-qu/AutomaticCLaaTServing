@@ -7,5 +7,6 @@ mv claat-linux-amd64 claat
 sudo chmod +x claat
 dir=$(pwd)
 echo "$dir"
+cd ..
 export PATH="$PATH:$dir"
 exec bash
