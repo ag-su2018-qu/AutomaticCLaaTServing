@@ -6,5 +6,6 @@ wget https://github.com/googlecodelabs/tools/releases/download/v1.0.4/claat-linu
 mv claat-linux-amd64 claat
 sudo chmod +x claat
 dir=$(pwd)
-export PATH=$dir
-source ~/.bashrc
+echo "$dir"
+export PATH="$PATH:$dir"
+exec bash
