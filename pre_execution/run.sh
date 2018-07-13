@@ -8,5 +8,6 @@ sudo chmod +x claat
 dir=$(pwd)
 echo "$dir"
 cd ..
-export PATH="$PATH:$dir"
-exec bash
+path=$PATH:$dir
+echo "PATH='$path'" >> ~/.profile
+source ~/.profile
