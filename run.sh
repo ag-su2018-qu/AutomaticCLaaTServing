@@ -14,5 +14,5 @@ done < "$1"
 rm -rf logs
 mkdir logs
 claat 
-nohup claat serve > logs/claat.log&
+nohup claat serve -addr localhost:80 > logs/claat.log&
 echo "Serving on port 9090"
