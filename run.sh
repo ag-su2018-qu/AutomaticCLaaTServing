@@ -13,5 +13,5 @@ while IFS='' read -r line || [[ -n "$line" ]]; do
 done < "$1"
 rm -rf logs
 mkdir logs
-nohup sh -c 'claat serve >> logs/claat.log && python3 -m http.server 80 >> logs/claat.log' &
+nohup claat serve >> logs/claat.log &
 echo "Serving on port 80"
